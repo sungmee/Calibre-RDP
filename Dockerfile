@@ -2,7 +2,7 @@
 # Builds a docker gui image
 FROM hurricane/dockergui:x11rdp1.3
 
-MAINTAINER aptalca
+MAINTAINER M.Chan <mo@lxooo.com>
 
 #########################################
 ##        ENVIRONMENTAL CONFIG         ##
@@ -18,8 +18,8 @@ ENV GROUP_ID=100
 ENV APP_NAME="Calibre"
 
 # Default resolution, change if you like
-ENV WIDTH=1280
-ENV HEIGHT=720
+ENV WIDTH=1440
+ENV HEIGHT=900
 
 # Use baseimage-docker's init system
 CMD ["/sbin/my_init"]
@@ -34,7 +34,12 @@ echo 'deb http://archive.ubuntu.com/ubuntu trusty-updates main universe restrict
 # Install packages needed for app
 export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive && \
 apt-get update && \
-apt-get install -y ImageMagick && \
+apt-get install -y ImageMagick \
+#########################################
+##      安装中文支持 文泉驿微米黑字体       ##
+#########################################
+ttf-wqy-microhei && \
+
 #########################################
 ##          GUI APP INSTALL            ##
 #########################################
