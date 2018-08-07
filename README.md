@@ -7,7 +7,7 @@
 在安装有 Docker 应用的系统平台上，您可以用下面的命令开始一个 Calibre 容器：
 
 ```shell
-docker run -d --name=calibre -e APP_NAME="Calibre" -e WIDTH=1280 -e HEIGHT=720 -e USER_ID=1000 -e GROUP_ID=1000 -e EDGE=0 -e TZ=Asia/Hong_Kong -v /path/to/calibre:/config:rw -p XXXX:8080 -p YYYY:8081 sungmee/calibre-rdf
+docker run -d --name=calibre -e APP_NAME="Calibre" -e WIDTH=1280 -e HEIGHT=720 -e USER_ID=1000 -e GROUP_ID=1000 -e EDGE=0 -e TZ=Asia/Hong_Kong -v /path/to/calibre:/config:rw -p XXXX:8080 -p YYYY:8081 sungmee/calibre-rdp:latest
 ```
 
 ### 设置说明
