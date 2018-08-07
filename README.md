@@ -1,6 +1,6 @@
 # Calibre 电子书图形用户界面和服务端
 
-可运行在 Web 浏览器中访问和管理的 Calibre X 应用 容器。这是 [aptalca/docker-rdp-calibre](https://github.com/aptalca/docker-rdp-calibre) 的 Fork 分支，主要在原来 基础上增加了 **文泉驿微米黑字体** ，以适应 Calire 图形界面的中文显示，并且翻译了说明文件。
+可在浏览器中访问和管理的 Calibre X 应用容器。这是 [aptalca/docker-rdp-calibre](https://github.com/aptalca/docker-rdp-calibre) 的 Fork 分支，主要在原来 基础上增加了 **文泉驿微米黑字体** ，以适应 Calire 图形界面的中文显示，并且翻译了说明文件。
 
 ## 安装：
 
