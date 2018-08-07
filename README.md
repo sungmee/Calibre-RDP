@@ -13,7 +13,7 @@ docker run -d --name=calibre -e APP_NAME="Calibre" -e WIDTH=1280 -e HEIGHT=720 -
 ### 设置说明
 - 变量 `APP_NAME` 为图形用户界面的标题名称，可以修改为您青睐的名字。
 - 如果您想更改图形用户界面的分辨率，可以修改 `WIDTH` 和 `HEIGHT` 变量。
-- 如果您想更改运行容器的用户和用户组，可以修改 `USER_ID` 和 `GROUP_ID` 变量，这在 Docker 宿主系统为 Linux 时非常有用，可在宿主机终端中用 `id` 命令获取。
+- 如果您想更改运行容器的用户和用户组，可以修改 `USER_ID` 和 `GROUP_ID` 变量，这在 Docker 宿主系统为 Linux 时非常有用，可在宿主机终端中用 `id` 命令获取。
 - 如果您想获取 Calibre 的最新版本，请将 `EDGE` 变量更改为 `1`，容器每次重新启动时都会将 Calibre 更新为最新版本。
 - 修改 `TZ` 变量为您的时区，参考 [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)。
 - 将变量 `/path/to/calibre` 替换为您需要的宿主系统文件夹。 这是 Calibre 的配置文件和库文件所在的位置，它们将在容器的更新，重新安装等后继续存在，使您的数据持久化。
